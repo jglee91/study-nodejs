@@ -1,0 +1,281 @@
+{
+	"id": "7cf02341-89e8-3984-205b-86f4a443d48d",
+	"name": "REST API Tutorial with Node.js",
+	"description": "",
+	"order": [
+		"d2e793d3-0f55-659f-306b-4946acd10f5b",
+		"f636d17d-9ca4-a76a-583e-c25e91e66e80",
+		"5652c3a2-cc00-05d5-8343-d54122d1783a",
+		"ccccd6b8-a0bf-6bf0-c4e8-36cf2c286c1c",
+		"8dcbdeef-8528-5c73-a1c3-b56aadca5506",
+		"c1a1c9d7-02a2-6936-4da9-f1c1f062cfd4",
+		"698d04eb-20e0-960e-2cb7-7662e04f71e1",
+		"b468ebfa-e861-2c75-72df-072678ca2da2"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1628060747402,
+	"owner": "14991316",
+	"public": false,
+	"requests": [
+		{
+			"id": "5652c3a2-cc00-05d5-8343-d54122d1783a",
+			"headers": "Authorization: Bearer {{accessToken}}\nx-refresh: {{refreshToken}}\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer {{accessToken}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-refresh",
+					"value": "{{refreshToken}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1337/api/sessions",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1628071112711,
+			"name": "Delete Session",
+			"description": "",
+			"collectionId": "7cf02341-89e8-3984-205b-86f4a443d48d",
+			"responses": []
+		},
+		{
+			"id": "698d04eb-20e0-960e-2cb7-7662e04f71e1",
+			"headers": "Authorization: Bearer {{accessToken}}\nx-refresh: {{refreshToken}}\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer {{accessToken}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-refresh",
+					"value": "{{refreshToken}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1337/api/posts/{{postId}}",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1628071239346,
+			"name": "Update Post",
+			"description": "",
+			"collectionId": "7cf02341-89e8-3984-205b-86f4a443d48d",
+			"responses": [],
+			"rawModeData": "{\n\t\"title\": \"Modified Post\",\n\t\"body\": \"This is modified post... This is modified post... This is modified post... This is modified post... This is modified post...\"\n}"
+		},
+		{
+			"id": "8dcbdeef-8528-5c73-a1c3-b56aadca5506",
+			"headers": "Authorization: Bearer {{accessToken}}\nx-refresh: {{refreshToken}}\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer {{accessToken}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-refresh",
+					"value": "{{refreshToken}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1337/api/posts",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1628071122906,
+			"name": "Create Post",
+			"description": "",
+			"collectionId": "7cf02341-89e8-3984-205b-86f4a443d48d",
+			"responses": [],
+			"rawModeData": "{\n\t\"title\": \"Post - 1\",\n\t\"body\": \"123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123\"\n}"
+		},
+		{
+			"id": "b468ebfa-e861-2c75-72df-072678ca2da2",
+			"headers": "Authorization: Bearer {{accessToken}}\nx-refresh: {{refreshToken}}\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer {{accessToken}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-refresh",
+					"value": "{{refreshToken}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1337/api/posts/{{postId}}",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1628071251698,
+			"name": "Delete Post",
+			"description": "",
+			"collectionId": "7cf02341-89e8-3984-205b-86f4a443d48d",
+			"responses": []
+		},
+		{
+			"id": "c1a1c9d7-02a2-6936-4da9-f1c1f062cfd4",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:1337/api/posts/{{postId}}",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "7cf02341-89e8-3984-205b-86f4a443d48d",
+			"data": null,
+			"dataMode": "params",
+			"name": "Get Post",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1628071050627,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "ccccd6b8-a0bf-6bf0-c4e8-36cf2c286c1c",
+			"headers": "Authorization: Bearer {{accessToken}}\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer {{accessToken}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1337/api/sessions",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1628071115743,
+			"name": "Get Sessions",
+			"description": "",
+			"collectionId": "7cf02341-89e8-3984-205b-86f4a443d48d",
+			"responses": []
+		},
+		{
+			"id": "d2e793d3-0f55-659f-306b-4946acd10f5b",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1337/api/users",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1628067039204,
+			"name": "Create User",
+			"description": "",
+			"collectionId": "7cf02341-89e8-3984-205b-86f4a443d48d",
+			"responses": [],
+			"rawModeData": "{\n\t\"email\": \"{{email}}\",\n\t\"password\": \"{{password}}\",\n\t\"passwordConfirmation\": \"{{password}}\",\n\t\"name\": \"{{name}}\"\n}"
+		},
+		{
+			"id": "f636d17d-9ca4-a76a-583e-c25e91e66e80",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1337/api/sessions",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1628067063250,
+			"name": "Create Session",
+			"description": "",
+			"collectionId": "7cf02341-89e8-3984-205b-86f4a443d48d",
+			"responses": [],
+			"rawModeData": "{\n\t\"email\": \"{{email}}\",\n\t\"password\": \"{{password}}\"\n}"
+		}
+	]
+}
